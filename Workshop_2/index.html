@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sameer Dahal - Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script.js" defer></script>
+
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        rel="stylesheet"
+    />
+</head>
+
+<body>
+    <!-- VIDEO BACKGROUND -->
+    <video autoplay loop muted playsinline id="fullpage-video">
+        <source src="videos/sameerbgvideo.mp4" type="video/mp4" />
+    </video>
+
+    <!-- DARK OVERLAY -->
+    <div id="video-overlay"></div>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div id="your-name">Sameer Dahal</div>
+
+        <nav class="navbar">
+            <button
+                class="menu-toggle"
+                id="menu-button"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a onclick="showSection('bio')">Short Bio</a></li>
+                <li><a onclick="showSection('skills')">Skills</a></li>
+                <li><a onclick="showSection('education')">Education</a></li>
+                <li><a onclick="showSection('interest')">Interests</a></li>
+                <li><a onclick="showSection('projects')">Projects</a></li>
+                <li><a onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BIO -->
+    <section id="bio" class="section active">
+        <article>
+            <h2>About Me</h2>
+
+            <div id="bio-content">
+                <div id="bio-image">
+                    <img
+                        src="images/sameer-pfp.jpg"
+                        alt="Profile Picture"
+                        class="profile-photo"
+                    />
+                </div>
+
+                <div id="bio-text">
+                    <p>
+                        Hello, I’m Sameer Dahal, currently in my 2nd year (3rd
+                        semester) of the BSc. (Hons) in Computer Science programme at
+                        Herald College Kathmandu.
+                        <br /><br />
+                        I have a strong foundation in HTML, CSS, JavaScript, PHP,
+                        MySQL, and have also worked with C# in Unity for game
+                        development.
+                        <br /><br />
+                        I enjoy turning ideas into real, functional digital
+                        experiences — whether it's websites, UI/UX design, or game
+                        mechanics.
+                        <br /><br />
+                        Apart from technology, I enjoy music, fitness, and traveling
+                        — things that inspire my creativity and keep me balanced.
+                    </p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <article>
+            <h2>Skills</h2>
+
+            <div class="container">
+                <div class="box">
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, JavaScript, PHP, MySQL</p>
+                </div>
+
+                <div class="box">
+                    <h3>Game Development</h3>
+                    <p>C# with Unity</p>
+                </div>
+
+                <div class="box">
+                    <h3>Soft Skills</h3>
+                    <p>Creativity, Teamwork, Problem-solving</p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- EDUCATION TIMELINE -->
+    <section id="education" class="section">
+        <article>
+            <h2>Education Timeline</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2023 – Present</h3>
+                        <h4>Herald College Kathmandu</h4>
+                        <p>BSc (Hons) in Computer Science</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2021</h3>
+                        <h4>Liverpool College</h4>
+                        <p>+2 — 2.98 GPA</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2019</h3>
+                        <h4>Paragon Public School</h4>
+                        <p>SEE — 3.70 GPA</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- INTERESTS -->
+    <section id="interest" class="section">
+        <article>
+            <h2>Interests & Hobbies</h2>
+
+            <div class="container">
+                <div class="box">
+                    <i class="fa-solid fa-mountain fa-2x"></i>
+                    <h3>Mountain Climbing</h3>
+                    <p>One of my dream adventures.</p>
+                </div>
+
+                <div class="box">
+                    <i class="fa-solid fa-route fa-2x"></i>
+                    <h3>Travelling</h3>
+                    <p>I enjoy exploring new places.</p>
+                </div>
+
+                <div class="box">
+                    <i class="fa-solid fa-gamepad fa-2x"></i>
+                    <h3>Gaming</h3>
+                    <p>Relaxing and inspiring hobby for me.</p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <article>
+            <h2>Featured Projects</h2>
+
+            <div class="container2">
+                <div class="boxx">
+                    <div class="imgboxx">
+                        <img
+                            class="imgg"
+                            src="images/Project1.png"
+                            alt="Project 1"
+                        />
+                    </div>
+                    <h3>Project 1</h3>
+                    <p>Description goes here.</p>
+                    <button class="viewlive">View Live</button>
+                    <button class="githubrepo">GitHub Repo</button>
+                </div>
+
+                <div class="boxx">
+                    <div class="imgboxx">
+                        <img
+                            class="imgg"
+                            src="images/Project2.png"
+                            alt="Project 2"
+                        />
+                    </div>
+                    <h3>Project 2</h3>
+                    <p>Description goes here.</p>
+                    <button class="viewlive">View Live</button>
+                    <button class="githubrepo">GitHub Repo</button>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+
+        <article>
+            <div class="submitform">
+                <div class="cntctme">Send me a message</div>
+
+                <form id="contact-form">
+                    <div class="input-box">
+                        <input
+                            type="text"
+                            id="name"
+                            class="input"
+                            placeholder="Name"
+                        />
+                    </div>
+
+                    <div class="input-box">
+                        <input
+                            type="email"
+                            id="email"
+                            class="input"
+                            placeholder="Email"
+                        />
+                    </div>
+
+                    <div class="input-box">
+                        <textarea
+                            id="message"
+                            class="input"
+                            placeholder="Message"
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="send">Send</button>
+                </form>
+
+                <div id="form-message"></div>
+            </div>
+        </article>
+
+        <footer class="footer">
+            <div class="copyright">© 2024 Sameer Dahal</div>
+            <div class="footerend">Designed by Sameer Dahal</div>
+        </footer>
+    </section>
+</body>
+</html>
